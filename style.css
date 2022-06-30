@@ -704,6 +704,18 @@ ul
 	width: 80px;
 }
 
+.footer-col h4.help::before
+{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: rgb(230, 211, 159);
+	height: 2px;
+	box-sizing: border-box;
+	width: 30px;
+}
+
 .footer-col ul li:not(:last-child)
 {
 	margin-bottom: 10px;
