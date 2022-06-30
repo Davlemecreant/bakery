@@ -116,12 +116,36 @@ body
   transition: color 0.3s ease-in-out;
 }
 
-.logo 
-{
+.logo {
   order: 1;
   font-size: 2.3rem;
-  margin-bottom: 0.5rem;
+  margin-top: -20px;
+  font-weight: 700;
+  position: relative;
+  text-transform: uppercase;
+  overflow: hidden;
+  background: linear-gradient(90deg, #fff, #000, #fff);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 6s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+.dropdown-item
+{
+  margin-right: 1.5rem;
+}
+
 
 /* ............//// Showcase styling ////......... */
 
@@ -635,8 +659,9 @@ button:hover::after, button:focus::after {
 
 .rows
 {
-	display: flex;
-  justify-content: space-evenly;
+  display: flex;
+  justify-content: space-between;
+  
 }
 
 ul
@@ -658,10 +683,11 @@ ul
 
 .footer-col h4
 {
-	font-size: 18px;
+	font-size: 12px;
 	color: #ffffff;
 	text-transform: capitalize;
-	margin-bottom: 35px;
+  margin-bottom: 35px;
+  margin-left: 35px;
 	font-weight: 500;
 	position: relative;
 }
@@ -675,7 +701,7 @@ ul
 	background-color: rgb(230, 211, 159);
 	height: 2px;
 	box-sizing: border-box;
-	width: 50px;
+	width: 80px;
 }
 
 .footer-col ul li:not(:last-child)
@@ -685,7 +711,7 @@ ul
 
 .footer-col ul li a
 {
-	font-size: 16px;
+	font-size: 12px;
 	text-transform: capitalize;
 	color: #ffffff;
 	text-decoration: none;
@@ -707,7 +733,7 @@ ul
 	height: 40px;
 	width: 40px;
 	background-color: rgba(255,255,255,0.2);
-	margin:0 10px 10px 0;
+	margin: 0px 10px 10px 0;
 	text-align: center;
 	line-height: 40px;
 	border-radius: 50%;
@@ -737,7 +763,6 @@ ul
   .footer-col
   {
     width: 100%;
-
   }
 }
 
@@ -781,7 +806,7 @@ ul
     height: 23px;
     width: 35px;
     position: absolute;
-    top: 17px;
+    top: 8px;
     left: 20px;
     z-index: 2;
     display: flex;
@@ -897,11 +922,6 @@ ul
     
   }
 
-  .navbar .menu-items li
-  {
-      font-size: 1.6rem;
-  }
-
   .testimonial-container 
   {
     flex-direction: column;
@@ -979,16 +999,25 @@ ul
   .logo 
   {
     position: absolute;
-    top: 06px;
+    top: 30px;
     right: 15px;
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .navbar .menu-items li 
   {
     margin-bottom: 2.5rem;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 500;
+    margin-right: 20px;
+    padding-right: 20px;
+    
+  }
+
+  .footer-col h4
+  {
+    font-size: 12px;
+    margin-left: 25px;
   }
 
 }
