@@ -141,6 +141,12 @@ body
   }
 }
 
+.dropdown-menu
+{
+  width: 100%;
+  
+}
+
 .dropdown-item
 {
   margin-right: 1.5rem;

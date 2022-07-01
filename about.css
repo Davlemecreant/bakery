@@ -141,6 +141,17 @@ body
   }
 }
 
+.dropdown-menu
+{
+  width: 100%;
+  
+}
+
+.dropdown-item
+{
+  margin-right: 1.2rem;
+}
+
 /* ............//// Showcase styling ////......... */
 
 .showcase-area 
